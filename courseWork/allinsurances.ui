@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AllInsurances</class>
+ <widget class="QDialog" name="AllInsurances">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>All Insurances</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/calendar.png</normaloff>:/img/calendar.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <family>Franklin Gothic Demi</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="activeInsurancesTab">
+      <property name="font">
+       <font>
+        <family>Franklin Gothic Medium</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <attribute name="title">
+       <string>Active</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="findActiveLn">
+         <property name="placeholderText">
+          <string>Enter smth to find around your active insurances:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="findActiveLayout"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="activeLayout"/>
+       </item>
+       <item>
+        <widget class="QTableView" name="activeTableView"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="closedInsurancesTab">
+      <attribute name="title">
+       <string>Closed</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="findClosedLn">
+         <property name="placeholderText">
+          <string>Enter smth to find around your closed insurances:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="findClosedLayout"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="closedLayout"/>
+       </item>
+       <item>
+        <widget class="QTableView" name="closedTableView"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

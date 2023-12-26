@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PurchaseTravelInsurance</class>
+ <widget class="QDialog" name="PurchaseTravelInsurance">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>522</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Insurance for travel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/travel-insurance.png</normaloff>:/img/travel-insurance.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                                 stop:0.03 rgba(205,212,219,1), 
+                                 stop:0.32 rgba(37,128,214,1), 
+                                 stop:0.85 rgba(9,186,44,1));
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="1">
+    <spacer name="verticalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="purchasePb">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Franklin Gothic Heavy</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+QPushButton{
+border: solid 0px #ffffff;
+background-color: rgb(37, 128, 213);
+border-radius:18px;
+margin-left:63px;
+margin-right:63px;
+color:rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+border: 1.5px inset rgb(1, 1, 1);
+background-color: rgb(59, 104, 136);
+border-radius:18px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <spacer name="verticalSpacer_6">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QWidget" name="verticalWidget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color:rgb(245, 245, 245);
+	border:0px solid;
+	border-radius:20px;
+}
+
+QComboBox{
+	background-color:rgb(37, 128, 213);
+	font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+	color:rgb(1, 1, 1);
+	border:0px;
+	border-radius:15px;
+	padding-left:15px;
+	margin-left:25px;
+	margin-right:25px;
+}
+
+QComboBox:hover{
+	background-color:rgb(28, 94, 156);
+	font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+	color:rgb(1, 1, 1);
+	border:0px solid rgb(0, 0, 0);
+	border-radius:15px;
+}
+
+QLineEdit{
+	background-color:rgb(110, 151, 190);
+	font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+	color:rgb(1, 1, 1);
+	border:0px;
+	border-radius:15px;
+}
+
+QLineEdit:focus{
+	background-color:rgb(83, 107, 135);
+	font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+	color:rgb(1, 1, 1);
+	border:2px solid rgb(0, 0, 0);
+	border-radius:15px;
+}
+
+
+
+QPushButton{
+border: solid 0px #ffffff;
+background-color: rgb(36, 126, 210);
+border-radius:18px;
+color:rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+border: 1.5px inset rgb(1, 1, 1);
+background-color: rgb(59, 104, 136);
+border-radius:18px;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>Franklin Gothic Heavy</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:rgb(10, 184, 49);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;TRAVEL INSURANCE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="startDatePb">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiLight SemiConde</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Start Date</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="endDatePb">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiLight SemiConde</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>End Date</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3"/>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="travelDirectionCb">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Travel direction:</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Europe (Schengen), Great Britain, Ireland</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Europe, Egypt, Tunisia, Turkey</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>All countries(except USA, Canada, rf and rb)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>All countries(except rf and rb)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="travelPurposeCb">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Activities:</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Without any activities</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Active leisure</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amator sport activities</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="coverageAmountCb">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Coverage amount:</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>30000€</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>50000€</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_8">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

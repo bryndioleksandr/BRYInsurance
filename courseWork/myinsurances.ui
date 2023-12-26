@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyInsurances</class>
+ <widget class="QDialog" name="MyInsurances">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>748</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Bahnschrift SemiLight SemiConde</family>
+    <pointsize>13</pointsize>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Manage Insurances</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/planning.png</normaloff>:/img/planning.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:rgb(29, 29, 29);
+}
+
+
+QPushButton{
+border: solid 0px #ffffff;
+background-color: #c38200;
+border-radius:15px;
+font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+margin-left:130px;
+margin-right:130px;
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+background-color:rgb(152, 101, 0);
+border: solid 1px rgb(0, 0, 0);
+}
+
+
+
+QWidget{
+		font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+	color:rgb(255, 255, 255);
+}
+
+QGroupBox{
+	font: 14pt &quot;Franklin Gothic Heavy&quot;;
+	color:rgb(255, 255, 255);
+
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>728</width>
+        <height>620</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color:rgb(29, 29, 29);
+}
+
+QPushButton{
+border: solid 0px #ffffff;
+background-color: #c38200;
+border-radius:15px;
+font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+margin-left:200px;
+margin-right:200px;
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+background-color:rgb(152, 101, 0);
+border: solid 1px rgb(0, 0, 0);
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="autoGb">
+         <property name="title">
+          <string>Auto Insurance</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="fullAutoPb">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Full window</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollAreaAuto">
+            <property name="styleSheet">
+             <string notr="true">QScrollArea{
+	background-color:rgb(29, 29, 29);
+}</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>684</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget{ background-color:rgb(29, 29, 29);}
+QPushButton{
+border: solid 0px #ffffff;
+background-color: #c38200;
+border-radius:15px;
+font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+background-color:rgb(152, 101, 0);
+border: solid 1px rgb(0, 0, 0);
+}
+
+</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="travelGb">
+         <property name="title">
+          <string>Travel Insurance</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="fullTravelPb">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Full window</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollAreaTravel">
+            <property name="styleSheet">
+             <string notr="true">QScrollArea{
+	background-color:rgb(29, 29, 29);
+}</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>684</width>
+               <height>110</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget{ background-color:rgb(29, 29, 29);}
+QPushButton{
+border: solid 0px #ffffff;
+background-color: #c38200;
+border-radius:15px;
+font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+background-color:rgb(152, 101, 0);
+border: solid 1px rgb(0, 0, 0);
+}
+
+</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="gadgetGb">
+         <property name="title">
+          <string>Gadget Insurance</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QPushButton" name="fullGadgetPb">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Full window</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="styleSheet">
+             <string notr="true">QScrollArea{
+	background-color:rgb(29, 29, 29);
+}</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>684</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget{ background-color:rgb(29, 29, 29);}
+QPushButton{
+border: solid 0px #ffffff;
+background-color: #c38200;
+border-radius:15px;
+font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+background-color:rgb(152, 101, 0);
+border: solid 1px rgb(0, 0, 0);
+}
+
+</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

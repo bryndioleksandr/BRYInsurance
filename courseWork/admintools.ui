@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminTools</class>
+ <widget class="QDialog" name="AdminTools">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Administator mode</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/admin-with-cogwheels.png</normaloff>:/img/admin-with-cogwheels.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:rgb(229, 229, 229);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="1" column="1">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QComboBox" name="deleteCb">
+       <property name="placeholderText">
+        <string>Table to delete</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Users</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AutoInsurance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TravelInsurance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GadgetInsurance</string>
+        </property>
+        <property name="icon">
+         <iconset theme="applications-utilities">
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="checkCb">
+       <property name="placeholderText">
+        <string>Table to check</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Users</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AutoInsurance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TravelInsurance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GadgetInsurance</string>
+        </property>
+        <property name="icon">
+         <iconset theme="applications-utilities">
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="0" colspan="3">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="deleteUserPb">
+         <property name="minimumSize">
+          <size>
+           <width>212</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>222</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Franklin Gothic Medium</family>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                 stop:0 rgba(184,193,201,1),
+                                 stop:0.08 rgba(184,193,201,1),
+                                 stop:0.32 rgba(107,150,191,1),
+                                 stop:0.85 rgba(9,100,186,1));
+
+	color:rgb(26, 26, 26);
+border: 1px solid rgb(34, 34, 34);
+border-radius:45px;
+padding-left:15px;
+padding-right:15px;
+}
+
+QPushButton:hover{
+	 background: qlineargradient(x1:1, y1:0, x2:0, y2:0,
+                                 stop:0 rgba(7, 76, 141,1),
+                                 stop:0.00 rgba(184,193,201,1),
+                                 stop:0.32 rgba(107,150,191,1),
+                                 stop:0.85 rgba(9,100,186,1));
+}</string>
+         </property>
+         <property name="text">
+          <string>
+
+Remove
+User
+
+</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/img/remove-user.png</normaloff>:/img/remove-user.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="checkInsurancesPb">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>222</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                 stop:0 rgba(198,105,28,1),
+                                 stop:0.38 rgba(198,105,28,1),
+                                 stop:0.87 rgba(230,214,201,1),
+                                 stop:0.99 rgba(255,255,255,1));
+	color:rgb(26, 26, 26);
+border: 1px solid rgb(26, 26, 26);
+border-radius:45px;
+padding-left:15px;
+padding-right:15px;
+}
+
+QPushButton:hover{
+	 background: qlineargradient(x1:1, y1:0, x2:0, y2:0,
+                                 stop:0 rgba(150, 79, 21, 1),
+                                 stop:0.38 rgba(198,105,28,1),
+                                 stop:0.87 rgba(230,214,201,1),
+                                 stop:0.99 rgba(255,255,255,1));
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>
+
+Check out
+Insurances
+
+</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/img/recruitment.png</normaloff>:/img/recruitment.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="clearTablesPb">
+       <property name="minimumSize">
+        <size>
+         <width>212</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>222</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                 stop:0 rgba(198,105,28,1),
+                                 stop:0.38 rgba(198,105,28,1),
+                                 stop:0.87 rgba(230,214,201,1),
+                                 stop:0.99 rgba(255,255,255,1));
+	color:rgb(26, 26, 26);
+border: 1px solid rgb(26, 26, 26);
+border-radius:45px;
+padding-left:15px;
+padding-right:15px;
+}
+
+QPushButton:hover{
+	 background: qlineargradient(x1:1, y1:0, x2:0, y2:0,
+                                 stop:0 rgba(150, 79, 21, 1),
+                                 stop:0.38 rgba(198,105,28,1),
+                                 stop:0.87 rgba(230,214,201,1),
+                                 stop:0.99 rgba(255,255,255,1));
+}</string>
+       </property>
+       <property name="text">
+        <string>       
+
+Delete
+Data
+
+       </string>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/img/drop.png</normaloff>:/img/drop.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="3">
+      <widget class="QLineEdit" name="userIdLn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift SemiLight SemiConde</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	background-color:rgb(232, 232, 232);
+	border: 1px solid rgb(209, 136, 0);
+	border-radius: 15px;
+	padding-left: 5px;
+margin-left:80px;
+margin-right:80px;
+	color:rgb(40, 40, 40);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(9, 100, 186);
+	background-color: rgb(208, 208, 208)
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>User ID to remove him:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Franklin Gothic Heavy</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; color:#c38200;&quot;&gt;BRY&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#0964ba;&quot;&gt;Insurance&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#0964ba;&quot;&gt;Administator mode&lt;/span&gt;&lt;/p&gt;&lt;hr/&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

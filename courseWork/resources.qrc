@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/img"/>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/">
+        <file>img/login.png</file>
+        <file>img/login (1).png</file>
+        <file>img/user.png</file>
+        <file>img/account.png</file>
+        <file>img/calendar.png</file>
+        <file>img/planning.png</file>
+        <file>img/shopping-cart.png</file>
+        <file>img/car-insurance.png</file>
+        <file>img/gadget.png</file>
+        <file>img/travel-insurance.png</file>
+        <file>img/2018_ferrari_red_car-wallpaper-2048x2048 (1).jpg</file>
+        <file>img/cool_red_ferrari_car_2018-wallpaper-1024x1024 (1).jpg</file>
+        <file>img/green_mountains_2-wallpaper-1280x1280 (1).jpg</file>
+        <file>img/iphone_13_apple_camera_smartphone-wallpaper-1024x1024 (1).jpg</file>
+        <file>img/drop.png</file>
+        <file>img/recruitment.png</file>
+        <file>img/remove-user.png</file>
+        <file>img/bryinsurance.png</file>
+        <file>img/check.png</file>
+        <file>img/forgot.png</file>
+        <file>img/reset-password.png</file>
+        <file>img/admin-with-cogwheels.png</file>
+    </qresource>
+</RCC>
