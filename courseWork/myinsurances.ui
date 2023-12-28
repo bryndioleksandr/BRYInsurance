@@ -30,6 +30,12 @@
 	background-color:rgb(29, 29, 29);
 }
 
+QMessageBox{
+	background-color: rgb(255, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+}
+
 
 QPushButton{
 border: solid 0px #ffffff;

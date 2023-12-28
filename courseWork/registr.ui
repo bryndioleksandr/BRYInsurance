@@ -33,6 +33,12 @@
 color:rgb(211, 211, 211);
 }
 
+QMessageBox{
+	background-color: rgb(255, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+}
+
 QLineEdit{
 	background-color:rgb(232, 232, 232);
 	border: 1px solid rgb(209, 136, 0);

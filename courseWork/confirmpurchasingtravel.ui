@@ -23,6 +23,12 @@ background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
                                  stop:0.03 rgba(205,212,219,1), 
                                  stop:0.32 rgba(37,128,214,1), 
                                  stop:0.85 rgba(9,186,44,1));
+}
+
+QMessageBox{
+	background-color: rgb(255, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">

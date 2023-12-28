@@ -88,7 +88,6 @@ void Login::on_loginPb_clicked()
         adminQuery.exec();
 
         if (query.next()) {
-QMessageBox::information(this, "Success", "Successful!!!");
 int currentUserId;
 QSqlQuery id;
 id.prepare("SELECT user_id FROM Users WHERE username = :username AND password = :password");

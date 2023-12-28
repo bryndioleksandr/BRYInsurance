@@ -29,6 +29,7 @@ public:
     virtual QSqlQuery findInTable(QString tableName, QString findField, QString byField) = 0;
     virtual QString select(QString selectField, int userId) = 0;
     virtual bool deleteExpiredInsuranceData(const QString &tableName) = 0;
+    virtual bool notificateExpiring(QString tableName, int userId) = 0;
     virtual bool updateBalance(int balance, int userId) = 0;
     virtual bool clearTable(const QString &tableName) = 0;
     virtual bool deleteInsurance(const QString &tableName, int insurancePolicyDelete) = 0;

@@ -50,6 +50,7 @@ public:
     bool deleteUser(int userId);
     bool updateBalance(int balance, int userId);
     QString select(QString selectField, int userId);
+    bool notificateExpiring(QString tableName, int userId);
     bool insertAdmin();
     bool deleteInsurance(const QString &tableName, int insurancePolicyDelete);
     bool clearTable(const QString &tableName);

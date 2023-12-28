@@ -30,6 +30,12 @@
 	font-family: &quot;Franklin Gothic Heavy&quot;;
 	font-size:14pt;
 }
+
+QMessageBox{
+background-color: rgb(255, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+}
                     </string>
   </property>
   <layout class="QGridLayout" name="gridLayout">

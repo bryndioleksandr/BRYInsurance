@@ -13,6 +13,13 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMessageBox{
+	background-color: rgb(175, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="registrPb">
     <property name="geometry">

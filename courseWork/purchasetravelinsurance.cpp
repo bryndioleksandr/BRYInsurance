@@ -47,6 +47,12 @@ void PurchaseTravelInsurance::on_endDatePb_clicked()
 
 void PurchaseTravelInsurance::on_purchasePb_clicked()
 {
+
+    if (startDate < QDate::currentDate() || endDate < QDate::currentDate()) {
+        QMessageBox::warning(this, "Error in inputing", "Are you sure that start date is ["+startDate.toString()+"] and end date is ["+endDate.toString()+"] ?\n\tChosen date cannot be in the past.");
+    }
+    else{
+
     travelDirection = ui->travelDirectionCb->currentText();
     travelPurpose = ui->travelPurposeCb->currentText();
     coverageAmount = ui->coverageAmountCb->currentText();
@@ -186,7 +192,7 @@ void PurchaseTravelInsurance::on_purchasePb_clicked()
 //        confirm.exec();
     }
 
-
+    }
 
 }
 

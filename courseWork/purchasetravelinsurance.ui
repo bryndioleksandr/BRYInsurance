@@ -23,7 +23,25 @@ background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
                                  stop:0.03 rgba(205,212,219,1), 
                                  stop:0.32 rgba(37,128,214,1), 
                                  stop:0.85 rgba(9,186,44,1));
-}</string>
+}
+
+QMessageBox{
+	background-color: rgb(255, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+}
+QCalendarWidget QToolButton#qt_calendar_header
+                         { color: black; }
+                         QCalendarWidget QToolButton#qt_calendar_prevmonth
+                         { color: black; }
+                         QCalendarWidget QToolButton#qt_calendar_nextmonth
+                         { color: black; }
+                         QCalendarWidget QToolButton#qt_calendar_monthbutton
+                         { color: black; }
+                         QCalendarWidget QToolButton#qt_calendar_yearbutton
+                         { color: black; };
+
+</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="1" column="2">
@@ -127,7 +145,7 @@ border-radius:18px;
 QComboBox{
 	background-color:rgb(37, 128, 213);
 	font: 350 13pt &quot;Bahnschrift SemiLight SemiConde&quot;;
-	color:rgb(1, 1, 1);
+	color:rgb(12, 12, 12);
 	border:0px;
 	border-radius:15px;
 	padding-left:15px;

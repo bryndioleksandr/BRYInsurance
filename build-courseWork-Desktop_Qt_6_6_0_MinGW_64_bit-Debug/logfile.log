@@ -1,48 +1,62 @@
-26-12-2023 23:56:44 |  Debug   | 10 | login.cpp | Login | QList("QSQLITE", "QMIMER", "QMARIADB", "QMYSQL", "QODBC", "QPSQL")
+28-12-2023 16:11:45 |  Debug   | 10 | login.cpp | Login | QList("QSQLITE", "QMIMER", "QMARIADB", "QMYSQL", "QODBC", "QPSQL")
 
-26-12-2023 23:56:44 | Critical | 17 | login.cpp | Login | Here is exception:  Error in creating Administrator
+28-12-2023 16:11:45 | Critical | 17 | login.cpp | Login | Here is exception:  Error in creating Administrator
 
-26-12-2023 23:56:44 |   Info   | 28 | login.cpp | Login | "de139c85a2f9326fe0aa4dd9839292ef7517f02d3a8a587cb1b3a70566d8a492"
+28-12-2023 16:11:45 |   Info   | 28 | login.cpp | Login | "de139c85a2f9326fe0aa4dd9839292ef7517f02d3a8a587cb1b3a70566d8a492"
 
-26-12-2023 23:56:44 | Warning  | 0 |  |  | Unknown property cursor
+28-12-2023 16:11:45 | Warning  | 0 |  |  | Unknown property cursor
 
-26-12-2023 23:58:43 |   Info   | 244 | mysqldbmanager.cpp | insertIntoTableUser | Users  table
+28-12-2023 16:11:58 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
+28-12-2023 16:11:58 |  Debug   | 847 | mysqldbmanager.cpp | notificateExpiring | Query execution failed or no results.
 
-27-12-2023 00:00:28 |   Info   | 340 | mysqldbmanager.cpp | insertIntoTableGadget | GadgetInsurance table
+28-12-2023 16:11:58 |  Debug   | 848 | mysqldbmanager.cpp | notificateExpiring | Error: ""
 
+28-12-2023 16:11:58 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
-27-12-2023 00:01:31 |   Info   | 340 | mysqldbmanager.cpp | insertIntoTableGadget | GadgetInsurance table
+28-12-2023 16:11:58 |  Debug   | 847 | mysqldbmanager.cpp | notificateExpiring | Query execution failed or no results.
 
+28-12-2023 16:11:58 |  Debug   | 848 | mysqldbmanager.cpp | notificateExpiring | Error: ""
 
-27-12-2023 00:01:38 | Warning  | 0 |  |  | QObject::connect: No such signal QComboBox::activated(QString) in ..\courseWork\purchaseautoinsurance.cpp:59
+28-12-2023 16:11:58 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
-27-12-2023 00:01:38 | Warning  | 0 |  |  | QObject::connect:  (sender name:   'autoTypeCb')
+28-12-2023 16:11:58 |  Debug   | 843 | mysqldbmanager.cpp | notificateExpiring | 1
 
-27-12-2023 00:01:38 | Warning  | 0 |  |  | QObject::connect:  (receiver name: 'PurchaseAutoInsurance')
+28-12-2023 16:11:58 |  Debug   | 844 | mysqldbmanager.cpp | notificateExpiring | something is expiring
 
-27-12-2023 00:02:37 |   Info   | 274 | mysqldbmanager.cpp | insertIntoTableAuto | AutoInsurance table
+28-12-2023 16:11:59 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
+28-12-2023 16:11:59 |  Debug   | 843 | mysqldbmanager.cpp | notificateExpiring | 1
 
-27-12-2023 00:02:42 | Warning  | 0 |  |  | QObject::connect: No such signal QComboBox::activated(QString) in ..\courseWork\purchaseautoinsurance.cpp:59
+28-12-2023 16:11:59 |  Debug   | 844 | mysqldbmanager.cpp | notificateExpiring | something is expiring
 
-27-12-2023 00:02:42 | Warning  | 0 |  |  | QObject::connect:  (sender name:   'autoTypeCb')
+28-12-2023 16:11:59 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
-27-12-2023 00:02:42 | Warning  | 0 |  |  | QObject::connect:  (receiver name: 'PurchaseAutoInsurance')
+28-12-2023 16:11:59 |  Debug   | 843 | mysqldbmanager.cpp | notificateExpiring | 1
 
-27-12-2023 00:04:21 |   Info   | 274 | mysqldbmanager.cpp | insertIntoTableAuto | AutoInsurance table
+28-12-2023 16:11:59 |  Debug   | 844 | mysqldbmanager.cpp | notificateExpiring | something is expiring
 
+28-12-2023 16:11:59 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
-27-12-2023 00:04:28 | Warning  | 0 |  |  | QMetaObject::connectSlotsByName: No matching signal for on_startCalendar_activated(QDate)
+28-12-2023 16:11:59 |  Debug   | 843 | mysqldbmanager.cpp | notificateExpiring | 1
 
-27-12-2023 00:04:28 | Warning  | 0 |  |  | QMetaObject::connectSlotsByName: No matching signal for on_endCalendar_activated(QDate)
+28-12-2023 16:11:59 |  Debug   | 844 | mysqldbmanager.cpp | notificateExpiring | something is expiring
 
-27-12-2023 00:04:28 | Warning  | 0 |  |  | QLayout: Attempting to add QLayout "" to PurchaseTravelInsurance "PurchaseTravelInsurance", which already has a layout
+28-12-2023 16:11:59 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
-27-12-2023 00:05:47 |   Info   | 304 | mysqldbmanager.cpp | insertIntoTableTravel | TravelInsurance table
+28-12-2023 16:11:59 |  Debug   | 847 | mysqldbmanager.cpp | notificateExpiring | Query execution failed or no results.
 
+28-12-2023 16:11:59 |  Debug   | 848 | mysqldbmanager.cpp | notificateExpiring | Error: ""
 
-27-12-2023 00:05:57 | Warning  | 0 |  |  | QMetaObject::connectSlotsByName: No matching signal for on_downloadPb_clicked(QString,int)
+28-12-2023 16:11:59 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
 
-27-12-2023 00:05:57 | Warning  | 0 |  |  | QMetaObject::connectSlotsByName: No matching signal for on_deletePb_clicked(QString,int)
+28-12-2023 16:11:59 |  Debug   | 847 | mysqldbmanager.cpp | notificateExpiring | Query execution failed or no results.
+
+28-12-2023 16:11:59 |  Debug   | 848 | mysqldbmanager.cpp | notificateExpiring | Error: ""
+
+28-12-2023 16:11:59 |  Debug   | 838 | mysqldbmanager.cpp | notificateExpiring | works
+
+28-12-2023 16:11:59 |  Debug   | 847 | mysqldbmanager.cpp | notificateExpiring | Query execution failed or no results.
+
+28-12-2023 16:11:59 |  Debug   | 848 | mysqldbmanager.cpp | notificateExpiring | Error: ""
 

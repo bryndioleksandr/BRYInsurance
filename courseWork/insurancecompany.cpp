@@ -22,7 +22,46 @@ InsuranceCompany::InsuranceCompany(int userId, QWidget *parent) :
         }
     }
 
+//    foreach (QString tableName, insuranceTables) {
+//        QSqlQuery query;
+//        query.prepare("SELECT * FROM " + tableName + " WHERE user_id = "+QString::number(currentUserId));
+//        int i = 0;
+//        if (query.exec()) {
+//            while (query.next()) {
+//                if(db->notificateExpiring(tableName, currentUserId)){
+//                    i++;
+//                    QMessageBox::warning(this, "Expiring insurance #" + QString::number(i), "Check out your insurances\nSome of them is expiring in less than 4 days!");
+//                }
+//            }
+//        }
+//    }
+
+    QSet<QString> notifiedInsuranceTypes;
+    QSet<int> notifiedInsurancePolicies;
+
+    foreach (QString tableName, insuranceTables) {
+        QSqlQuery query;
+        query.prepare("SELECT * FROM " + tableName + " WHERE user_id = " + QString::number(currentUserId));
+
+        if (query.exec()) {
+            while (query.next()) {
+                int policyId = query.value("insurancePolicy").toInt();
+
+                if (db->notificateExpiring(tableName, currentUserId) &&
+                    !notifiedInsuranceTypes.contains(tableName) &&
+                    !notifiedInsurancePolicies.contains(policyId))
+                {
+                    notifiedInsuranceTypes.insert(tableName);
+                    notifiedInsurancePolicies.insert(policyId);
+
+                    QMessageBox::warning(this, "Expiring insurance", "Check out your " + tableName + " insurances\nSome of them are expiring in less than 5 days!");
+                }
+            }
+        }
+    }
+
     ui->welcomeLb->setText(QString("Hello, ")+db->select("name", currentUserId).at(0).toUpper()+db->select("name", currentUserId).mid(1).toLower());
+
 
     foreach (QPushButton *button, findChildren<QPushButton *>()) {
         button->setCursor(Qt::PointingHandCursor);

@@ -677,7 +677,11 @@ bool MySqlDBManager::deleteExpiredInsuranceData(const QString &tableName) {
     time_t endAuto;
 
     QSqlQuery selectQuery;
-    selectQuery.prepare(QString("SELECT * FROM %1 WHERE ((julianday(end_date) - julianday('now')) < 0);").arg(tableName));
+
+    if(tableName == "AutoInsurance") selectQuery.prepare(QString("SELECT * FROM %1 WHERE (TIMESTAMPDIFF(DAY, CURRENT_TIMESTAMP(), end_date) < 0) AND user_id = :userId;").arg(tableName));
+    else selectQuery.prepare(QString("SELECT * FROM %1 WHERE (DATEDIFF(end_date, CURDATE()) < 0) AND user_id = :userId;").arg(tableName));
+
+   // selectQuery.prepare(QString("SELECT * FROM %1 WHERE ((julianday(end_date) - julianday('now')) < 0);").arg(tableName));
     if (selectQuery.exec() && selectQuery.next()) {
         if(tableName == "AutoInsurance"){
             userId = selectQuery.value("user_id").toInt();
@@ -825,6 +829,24 @@ bool MySqlDBManager::deleteInsurance(const QString &tableName, int insurancePoli
     }
     else {
             return true;
+    }
+}
+
+bool MySqlDBManager::notificateExpiring(QString tableName, int userId){
+
+    QSqlQuery queryNotificate;
+    qDebug()<<"works";
+    if(tableName == "AutoInsurance") queryNotificate.prepare(QString("SELECT TIMESTAMPDIFF(DAY, CURRENT_TIMESTAMP(), end_date) FROM %1 WHERE (TIMESTAMPDIFF(DAY, CURRENT_TIMESTAMP(), end_date) < 5) AND user_id = :userId;").arg(tableName));
+    else queryNotificate.prepare(QString("SELECT DATEDIFF(end_date, CURDATE()) FROM %1 WHERE (DATEDIFF(end_date, CURDATE()) < 5) AND user_id = :userId;").arg(tableName));
+    queryNotificate.bindValue(":userId", QString::number(userId));
+    if (queryNotificate.exec() && queryNotificate.next()) {
+            qDebug()<<queryNotificate.value(0).toInt();
+            qDebug() << "something is expiring";
+            return true;
+    } else {
+            qDebug() << "Query execution failed or no results.";
+            qDebug() << "Error:" << queryNotificate.lastError().text();
+            return false;
     }
 }
 

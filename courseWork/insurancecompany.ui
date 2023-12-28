@@ -27,6 +27,12 @@
   <property name="styleSheet">
    <string notr="true">QDialog{
 	background-color:rgb(229, 229, 229);
+}
+
+QMessageBox{
+	background-color: rgb(255, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">

@@ -24,7 +24,12 @@
                           stop:0.27 rgba(107,150,191,1), 
                           stop:0.92 rgba(245,39,39,1));
 }
-         
+        
+QMessageBox{
+	background-color: rgb(255, 255, 255);
+	color:rgb(25, 25, 25);
+	font: 350 12pt &quot;Bahnschrift SemiLight SemiConde&quot;;
+} 
    </string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
