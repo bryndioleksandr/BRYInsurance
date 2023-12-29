@@ -21,7 +21,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_SecondMainwindow
+class Ui_Shop
 {
 public:
     QGridLayout *gridLayout;
@@ -42,16 +42,16 @@ public:
     QSpacerItem *horizontalSpacer;
     QSpacerItem *horizontalSpacer_8;
 
-    void setupUi(QDialog *SecondMainwindow)
+    void setupUi(QDialog *Shop)
     {
-        if (SecondMainwindow->objectName().isEmpty())
-            SecondMainwindow->setObjectName("SecondMainwindow");
-        SecondMainwindow->resize(752, 323);
-        SecondMainwindow->setAcceptDrops(false);
+        if (Shop->objectName().isEmpty())
+            Shop->setObjectName("Shop");
+        Shop->resize(752, 323);
+        Shop->setAcceptDrops(false);
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/img/shopping-cart.png"), QSize(), QIcon::Normal, QIcon::Off);
-        SecondMainwindow->setWindowIcon(icon);
-        gridLayout = new QGridLayout(SecondMainwindow);
+        Shop->setWindowIcon(icon);
+        gridLayout = new QGridLayout(Shop);
         gridLayout->setObjectName("gridLayout");
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -64,20 +64,20 @@ public:
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(50);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        label = new QLabel(SecondMainwindow);
+        label = new QLabel(Shop);
         label->setObjectName("label");
         label->setStyleSheet(QString::fromUtf8(""));
         label->setPixmap(QPixmap(QString::fromUtf8(":/img/cool_red_ferrari_car_2018-wallpaper-1024x1024 (1).jpg")));
 
         horizontalLayout_2->addWidget(label);
 
-        label_2 = new QLabel(SecondMainwindow);
+        label_2 = new QLabel(Shop);
         label_2->setObjectName("label_2");
         label_2->setPixmap(QPixmap(QString::fromUtf8(":/img/green_mountains_2-wallpaper-1280x1280 (1).jpg")));
 
         horizontalLayout_2->addWidget(label_2);
 
-        label_3 = new QLabel(SecondMainwindow);
+        label_3 = new QLabel(Shop);
         label_3->setObjectName("label_3");
         label_3->setPixmap(QPixmap(QString::fromUtf8(":/img/iphone_13_apple_camera_smartphone-wallpaper-1024x1024 (1).jpg")));
 
@@ -93,7 +93,7 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(50);
         horizontalLayout->setObjectName("horizontalLayout");
-        autoInsurancePb = new QPushButton(SecondMainwindow);
+        autoInsurancePb = new QPushButton(Shop);
         autoInsurancePb->setObjectName("autoInsurancePb");
         autoInsurancePb->setMinimumSize(QSize(0, 100));
         QFont font;
@@ -120,7 +120,7 @@ public:
 
         horizontalLayout->addWidget(autoInsurancePb);
 
-        travelInsurancePb = new QPushButton(SecondMainwindow);
+        travelInsurancePb = new QPushButton(Shop);
         travelInsurancePb->setObjectName("travelInsurancePb");
         travelInsurancePb->setMinimumSize(QSize(0, 100));
         travelInsurancePb->setFont(font);
@@ -143,7 +143,7 @@ public:
 
         horizontalLayout->addWidget(travelInsurancePb);
 
-        gadgetInsurancePb = new QPushButton(SecondMainwindow);
+        gadgetInsurancePb = new QPushButton(Shop);
         gadgetInsurancePb->setObjectName("gadgetInsurancePb");
         gadgetInsurancePb->setMinimumSize(QSize(0, 100));
         gadgetInsurancePb->setFont(font);
@@ -189,24 +189,24 @@ public:
         gridLayout->addItem(horizontalSpacer_8, 0, 8, 1, 1);
 
 
-        retranslateUi(SecondMainwindow);
+        retranslateUi(Shop);
 
-        QMetaObject::connectSlotsByName(SecondMainwindow);
+        QMetaObject::connectSlotsByName(Shop);
     } // setupUi
 
-    void retranslateUi(QDialog *SecondMainwindow)
+    void retranslateUi(QDialog *Shop)
     {
-        SecondMainwindow->setWindowTitle(QCoreApplication::translate("SecondMainwindow", "Insurances` Store", nullptr));
+        Shop->setWindowTitle(QCoreApplication::translate("Shop", "Insurances` Store", nullptr));
         label->setText(QString());
         label_2->setText(QString());
         label_3->setText(QString());
-        autoInsurancePb->setText(QCoreApplication::translate("SecondMainwindow", "Purchase\n"
+        autoInsurancePb->setText(QCoreApplication::translate("Shop", "Purchase\n"
 "Auto\n"
 "Insurance", nullptr));
-        travelInsurancePb->setText(QCoreApplication::translate("SecondMainwindow", "Purchase\n"
+        travelInsurancePb->setText(QCoreApplication::translate("Shop", "Purchase\n"
 "Travel\n"
 "Insurances", nullptr));
-        gadgetInsurancePb->setText(QCoreApplication::translate("SecondMainwindow", "Purchase\n"
+        gadgetInsurancePb->setText(QCoreApplication::translate("Shop", "Purchase\n"
 "Gadget\n"
 "Insurances", nullptr));
     } // retranslateUi
@@ -214,7 +214,7 @@ public:
 };
 
 namespace Ui {
-    class SecondMainwindow: public Ui_SecondMainwindow {};
+    class Shop: public Ui_Shop {};
 } // namespace Ui
 
 QT_END_NAMESPACE

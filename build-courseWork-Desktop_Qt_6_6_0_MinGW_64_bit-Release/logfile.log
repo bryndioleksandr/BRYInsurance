@@ -1,10 +1,10 @@
-28-12-2023 16:16:42 |  Debug   | 0 |  |  | QList("QSQLITE", "QMIMER", "QMARIADB", "QMYSQL", "QODBC", "QPSQL")
+28-12-2023 20:12:12 |  Debug   | 0 |  |  | QList("QSQLITE", "QMIMER", "QMARIADB", "QMYSQL", "QODBC", "QPSQL")
 
-28-12-2023 16:16:42 | Critical | 0 |  |  | Here is exception:  Error in creating Administrator
+28-12-2023 20:12:12 | Critical | 0 |  |  | Here is exception:  Error in creating Administrator
 
-28-12-2023 16:16:42 |   Info   | 0 |  |  | "de139c85a2f9326fe0aa4dd9839292ef7517f02d3a8a587cb1b3a70566d8a492"
+28-12-2023 20:12:12 |   Info   | 0 |  |  | "de139c85a2f9326fe0aa4dd9839292ef7517f02d3a8a587cb1b3a70566d8a492"
 
-28-12-2023 16:16:42 | Warning  | 0 |  |  | Unknown property cursor
+28-12-2023 20:12:12 | Warning  | 0 |  |  | Unknown property cursor
 
-28-12-2023 16:16:42 | Warning  | 0 |  |  | Unknown property cursor
+28-12-2023 20:12:18 |  Debug   | 0 |  |  | userid is  "5"
 

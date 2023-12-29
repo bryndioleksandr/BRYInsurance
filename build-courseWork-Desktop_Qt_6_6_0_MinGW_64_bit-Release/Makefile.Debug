@@ -11586,7 +11586,8 @@ win32/shop.o: ../courseWork/shop.cpp ../courseWork/shop.h \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qcalendarwidget.h \
 		../courseWork/confirmpurchasingtravel.h \
 		../courseWork/purchasegadgetinsurance.h \
-		../courseWork/confirmpurchasinggadget.h
+		../courseWork/confirmpurchasinggadget.h \
+		ui/ui_shop.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\shop.o ..\courseWork\shop.cpp
 
 win32/showevents.o: ../courseWork/showevents.cpp ../courseWork/showevents.h \

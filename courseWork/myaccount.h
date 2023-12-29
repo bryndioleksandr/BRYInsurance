@@ -22,13 +22,9 @@ public:
     ~MyAccount();
 
 private slots:
-
     void on_deleteAccountPb_clicked();
-
     void on_changePasswordPb_clicked();
-
     void on_replenishBalancePb_clicked();
-
     void on_logoutPb_clicked();
 signals:
     void closed();

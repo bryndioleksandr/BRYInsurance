@@ -60,7 +60,6 @@ bool MySqlDBManager::openDataBase()
         qCritical() << "Недійсні параметри підключення до бази даних.";
         return false;
     }
-
     if (db.open()) {
         return true;
     } else {
@@ -87,7 +86,6 @@ bool MySqlDBManager::createTables()
             throw std::runtime_error("Error in creating Administrator");
             success = false;
     }
-
     if (!query.exec("CREATE TABLE " TABLE_USERS "("
                     "user_id INTEGER PRIMARY KEY AUTO_INCREMENT, "
                     "balance INTEGER, "
@@ -170,8 +168,6 @@ bool MySqlDBManager::createTables()
         success = false;
     }
 
-
-
     if (!queryDeletedAuto.exec("CREATE TABLE DeletedAutoInsurance("
                      "user_id INTEGER, "
                      "insurancePolicy BIGINT, "
@@ -233,9 +229,6 @@ bool MySqlDBManager::createTables()
         throw std::runtime_error("Error in creating DeletedTravelInsurance");
         success = false;
     }
-
-
-
     return success;
 }
 bool MySqlDBManager::insertIntoTableUser(User& user)
@@ -312,22 +305,18 @@ bool MySqlDBManager::insertIntoTableTravel(TravelInsurance &travelInsurance, Use
         query.bindValue(":insurancePrice",  travelInsurance.getPrice());
         query.bindValue(":start_date", QDate::fromString(QString::fromStdString(travelInsurance.getWarrantyStartDate()), "ddd MMM d yyyy"));
         query.bindValue(":end_date", QDate::fromString(QString::fromStdString(travelInsurance.getWarrantyEndDate()), "ddd MMM d yyyy"));
-
         if (!query.exec()) {
             throw std::runtime_error("Error inserting into Travel's table");
         }
-
         query2.prepare("UPDATE Users SET birthDate = :birthDate, passport = :passport, email = :email, city = :city WHERE user_id = :user_id");
         query2.bindValue(":user_id", travelInsurance.getUserId());
         query2.bindValue(":birthDate", QDate::fromString(QString::fromStdString(userInfo.getBirthDate()), "dd.MM.yyyy"));
         query2.bindValue(":passport", QString::fromStdString(userInfo.getPassport()));
         query2.bindValue(":email", QString::fromStdString(userInfo.getEmail()));
         query2.bindValue(":city",  QString::fromStdString(userInfo.getCity()));
-
         if (!query2.exec()){
             throw std::runtime_error("Error updating User's table");
         }
-
         return true;
     } catch (const std::exception &ex) {
         qCritical() << "Exception in insertIntoTableTravel: " << ex.what();
@@ -356,7 +345,6 @@ bool MySqlDBManager::insertIntoTableGadget(GadgetInsurance &gadgetInsurance){
     } else
         return true;
 }
-
 
 QSqlQuery MySqlDBManager::sortTable(QString tableName, QString field, QString sortType, int userId){
     QSqlQuery query;
@@ -539,7 +527,6 @@ QSqlQuery MySqlDBManager::findInTable(QString tableName, QString findField){
     }
 }
 
-
 QSqlQuery MySqlDBManager::findInTable(QString tableName, QString findField, QString byField) {
     QSqlQuery query;
     qInfo() << "Sorting table " << tableName;
@@ -667,8 +654,6 @@ QSqlQuery MySqlDBManager::findInTable(QString tableName, QString findField, QStr
 }
 
 bool MySqlDBManager::deleteExpiredInsuranceData(const QString &tableName) {
-
-
     QString autoType, insuranceType, autoNumber, autoBrand, autoModel, cubicCapacity, carryingCapacity, motoCubic, city, numOfPassengers, trailer_for, startAuto;
     QString phoneNumberGadget, gadgetBrand, gadgetModel, insuranceTypeGadget, coverageType, startGadget;
     QString travelActivity, travelDirection, coverageAmountTravel, startTravel;
@@ -680,8 +665,6 @@ bool MySqlDBManager::deleteExpiredInsuranceData(const QString &tableName) {
 
     if(tableName == "AutoInsurance") selectQuery.prepare(QString("SELECT * FROM %1 WHERE (TIMESTAMPDIFF(DAY, CURRENT_TIMESTAMP(), end_date) < 0) AND user_id = :userId;").arg(tableName));
     else selectQuery.prepare(QString("SELECT * FROM %1 WHERE (DATEDIFF(end_date, CURDATE()) < 0) AND user_id = :userId;").arg(tableName));
-
-   // selectQuery.prepare(QString("SELECT * FROM %1 WHERE ((julianday(end_date) - julianday('now')) < 0);").arg(tableName));
     if (selectQuery.exec() && selectQuery.next()) {
         if(tableName == "AutoInsurance"){
             userId = selectQuery.value("user_id").toInt();
@@ -726,12 +709,7 @@ bool MySqlDBManager::deleteExpiredInsuranceData(const QString &tableName) {
             endGadget = QDate::currentDate();
             insurancePolicy = selectQuery.value("insurancePolicy").toInt();
         }
-
-
-
-
         QSqlQuery query;
-
         query.prepare("DELETE FROM " + tableName + " WHERE ((julianday(end_date) - julianday('now')) < 0);");
             if (query.exec()) {
                 QSqlQuery queryDeletedAuto, queryDeletedTravel, queryDeletedGadget;
@@ -783,7 +761,6 @@ bool MySqlDBManager::deleteExpiredInsuranceData(const QString &tableName) {
                         throw std::runtime_error("Error in deleting expired insurance");
                     }
                 }
-
                 else if (tableName == "GadgetInsurance") {
                     queryDeletedGadget.prepare("INSERT INTO DeletedGadgetInsurance (user_id, insurancePolicy, phoneNumber, gadgetBrand, gadgetModel, insuranceType, coverageType, insurancePrice, start_date, end_date) "
                                                "VALUES (:user_id, :insurancePolicy, :phoneNumber, :gadgetBrand, :gadgetModel, :insuranceType, :coverageType, :insurancePrice, :start_date, :end_date)");
@@ -803,7 +780,6 @@ bool MySqlDBManager::deleteExpiredInsuranceData(const QString &tableName) {
                        throw std::runtime_error("Error in deleting expired insurance");
                     }
                 }
-
 }
             return true;
     }
@@ -820,7 +796,6 @@ bool MySqlDBManager::clearTable(const QString &tableName){
             return true;
     }
 }
-
 bool MySqlDBManager::deleteInsurance(const QString &tableName, int insurancePolicyDelete){
     QSqlQuery query;
     query.prepare("DELETE FROM " + tableName + " WHERE insurancePolicy = "+QString::number(insurancePolicyDelete));
@@ -831,7 +806,6 @@ bool MySqlDBManager::deleteInsurance(const QString &tableName, int insurancePoli
             return true;
     }
 }
-
 bool MySqlDBManager::notificateExpiring(QString tableName, int userId){
 
     QSqlQuery queryNotificate;

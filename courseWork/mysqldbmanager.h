@@ -57,17 +57,12 @@ public:
 
 private:
     QSqlDatabase db;
-
     static MySqlDBManager* instance;
-
     MySqlDBManager();
-
     bool openDataBase();
     bool restoreDataBase();
     void closeDataBase();
     bool createTables();
-
-
 };
 
 

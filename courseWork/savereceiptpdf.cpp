@@ -1,16 +1,11 @@
 #include "savereceiptpdf.h"
 
-SaveReceiptPDF::SaveReceiptPDF()
-{
-
-}
-
+SaveReceiptPDF::SaveReceiptPDF(){}
 
 void SaveReceiptPDF::drawText(QPainter &painter, int x, int y, const QString &text)
 {
     painter.drawText(x, y, text);
 }
-
 
 void SaveReceiptPDF::generateReceipt(AutoInsurance &insurance, User &user){
     QString defaultPath = "C:/courseWork/Insurances/active/AutoInsurance/";
@@ -18,16 +13,13 @@ void SaveReceiptPDF::generateReceipt(AutoInsurance &insurance, User &user){
     if (!fileName.isEmpty()) {
         QPdfWriter pdfWriter(fileName);
         QPainter painter(&pdfWriter);
-
         QSqlQuery query;
         query.prepare("SELECT Users.*, AutoInsurance.* FROM Users JOIN AutoInsurance ON Users.user_id = AutoInsurance.user_id WHERE AutoInsurance.insurancePolicy = :insPolicy");
         query.bindValue(":insPolicy", insurance.getInsurancePolicy());
-
         if (query.exec() && query.next()) {
             QFont font1("Courier new", 18);
             painter.setFont(font1);
             drawText(painter, 3000, 3300, "Insurance Confirmation Receipt");
-
             QFont font("Courier new", 14);
             painter.setFont(font);
             drawText(painter, 2000, 3700, QString("Insurance Type: %1").arg(QString::fromStdString(insurance.getInsuranceType())));
@@ -41,7 +33,6 @@ void SaveReceiptPDF::generateReceipt(AutoInsurance &insurance, User &user){
             drawText(painter, 2000, 6900, QString("autoNumber: %1").arg(QString::fromStdString(insurance.getCarNumber())));
             drawText(painter, 2000, 7300, QString("autoBrand: %1").arg(QString::fromStdString(insurance.getCarBrand())));
             drawText(painter, 2000, 7700, QString("autoModel: %1").arg(QString::fromStdString(insurance.getCarModel())));
-
             if (QString::fromStdString(insurance.getAutoType()) == "Car")
                 drawText(painter, 2000, 8100, QString("Cubic capacity: %1").arg(QString::fromStdString(insurance.getCarCubicCapacity())));
             else if (QString::fromStdString(insurance.getAutoType()) == "Truck")
@@ -52,12 +43,10 @@ void SaveReceiptPDF::generateReceipt(AutoInsurance &insurance, User &user){
                 drawText(painter, 2000, 8100, QString("Number of passengers: %1").arg(QString::fromStdString(insurance.getNumOfPassengers())));
             else if (QString::fromStdString(insurance.getAutoType()) == "Trailer")
                 drawText(painter, 2000, 8100, QString("Trailer for: %1").arg(QString::fromStdString(insurance.getTrailerFor())));
-
             drawText(painter, 2000, 8500, QString("Auto price: %1%2").arg(QString::number(insurance.getCarPrice())).arg("$"));
             drawText(painter, 2000, 8900, QString("Auto year: %1").arg(QString::number(insurance.getCarYear())));
             drawText(painter, 2000, 9300, QString("Warranty start date: %1").arg((QDateTime::fromSecsSinceEpoch(insurance.getWarrantyStartDate(), Qt::UTC)).toString("yyyy-MM-dd hh:mm:ss")));
             drawText(painter, 2000, 9700, QString("Warranty end date: %1").arg((QDateTime::fromSecsSinceEpoch(insurance.getWarrantyEndDate(), Qt::UTC)).toString("yyyy-MM-dd hh:mm:ss")));
-
             QFont font2("Courier new", 15);
             font2.setWeight(QFont::Bold);
             painter.setFont(font2);
@@ -94,16 +83,13 @@ void SaveReceiptPDF::generateReceipt(TravelInsurance &insurance, User &user){
             drawText(painter, 2000, 5700, QString("Phone number: %1").arg(QString::fromStdString(user.getPhoneNumber())));
             drawText(painter, 2000, 6100, QString("Username: %1").arg(QString::fromStdString(user.getUsername())));
             drawText(painter, 2000, 6500, QString("Insurance policy: %1").arg(QString::number(insurance.getInsurancePolicy())));
-
             drawText(painter, 2000, 6900, QString("Warranty start date: %1").arg(QString::fromStdString(insurance.getWarrantyStartDate())));
             drawText(painter, 2000, 7300, QString("Warranty end date: %1").arg(QString::fromStdString(insurance.getWarrantyEndDate())));
-
             QFont font2("Courier new", 15);
             font2.setWeight(QFont::Bold);
             painter.setFont(font2);
             drawText(painter, 2000, 7800, QString("Coverage amount: %1%2").arg(QString::fromStdString(insurance.getCoverageAmount())).arg(""));
             drawText(painter, 2000, 8200, QString("Price to pay: %1%2").arg(QString::number(insurance.getPrice())).arg("₴"));
-
             painter.end();
         }
     }

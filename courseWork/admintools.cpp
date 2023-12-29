@@ -25,11 +25,6 @@ void AdminTools::on_checkInsurancesPb_clicked()
     connect(openNext, &AllInsurances::closed, this, &AdminTools::onDialogClosed);
     openNext->setModal(true);
     openNext->exec();
-
-//    AllInsurances openNext(tableName);
-//    openNext.setModal(true);
-//    openNext.exec();
-
 }
 
 

@@ -35,13 +35,9 @@ private:
     Ui::ShowEvents *ui;
     int currentUserId;
     QString tableName;
-
-
-    QSortFilterProxyModel *allProxyModel, *activeProxyModel, *closedProxyModel;
     QSqlQueryModel *allTableModel, *activeTableModel, *closedTableModel;
     QComboBox *allComboBox, *activeComboBox, *closedComboBox;
     QComboBox *allComboBoxDesc, *activeComboBoxDesc, *closedComboBoxDesc;
-
 };
 
 #endif // SHOWEVENTS_H

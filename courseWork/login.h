@@ -38,19 +38,11 @@ public:
 
 private slots:
     void on_loginPb_clicked();
-
-
     void on_forgotPb_clicked();
-
     void on_checkBoxPassword_stateChanged(int arg1);
-
     void on_signUpPb_clicked();
 public slots:
     void onDialogClosed();
-//signals:
-//    void closed();
-//protected:
-//    void closeEvent(QCloseEvent *event) override;
 
 private:
     Ui::Login *ui;

@@ -20,7 +20,6 @@ public:
 
 private slots:
     void on_confirmPb_clicked();
-
     void on_checkBox_stateChanged(int arg1);
 
 private:

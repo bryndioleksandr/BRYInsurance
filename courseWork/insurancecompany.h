@@ -24,21 +24,13 @@ public:
 
 private slots:
     void on_insuranceMarketPb_clicked();
-
     void on_managePoliciesPb_clicked();
-
     void on_insuranceEvents_clicked();
-
     void on_accountPb_clicked();
-
     void onMarketClosed();
-
     void on_actionStorePb_clicked();
-
     void on_actionEventsPb_clicked();
-
     void on_actionManagePb_clicked();
-
     void on_actionAccountPb_clicked();
 public slots:
     void onDialogClosed();
@@ -46,7 +38,6 @@ signals:
     void closed();
 protected:
     void closeEvent(QCloseEvent *event) override;
-
 private:
     Ui::InsuranceCompany *ui;
     int currentUserId;

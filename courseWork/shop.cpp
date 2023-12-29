@@ -1,5 +1,5 @@
 #include "shop.h"
-#include "ui_secondmainwindow.h"
+#include "ui_shop.h"
 
 Shop::Shop(int userId, QWidget *parent) :
     QDialog(parent),

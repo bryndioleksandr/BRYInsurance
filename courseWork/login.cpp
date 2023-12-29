@@ -70,6 +70,8 @@ void Login::on_loginPb_clicked()
     username = ui->usernameLn->text();
     password = ui->passwordLn->text();
 
+
+
     QByteArray bytesi = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256);
     QString hashedPassword = QString(bytesi.toHex());
 
@@ -93,23 +95,14 @@ QSqlQuery id;
 id.prepare("SELECT user_id FROM Users WHERE username = :username AND password = :password");
 id.bindValue(":username", username);
 id.bindValue(":password", hashedPassword);
-id.exec();
-if (id.next()) {
+if (id.exec() && id.next()) {
     currentUserId = id.value(0).toInt();
-
-//    InsuranceCompany *openNext = new InsuranceCompany(currentUserId);
-//    //connect(openNext, &InsuranceCompany::closed, this, &Login::onDialogClosed);
-//    openNext->setModal(true);
-//    openNext->exec();
-//    hide();
-
+    qDebug()<<"userid is "<<QString::number(currentUserId);
     this->hide();
     InsuranceCompany *openNext = new InsuranceCompany(currentUserId);
     connect(openNext, &InsuranceCompany::closed, this, &Login::onDialogClosed);
     openNext->setModal(true);
     openNext->show();
-
-
 }
         } else if (adminQuery.next()) {
             QMessageBox::information(this, "Admin logged in", "Welcome back as an administrator!");
@@ -135,20 +128,12 @@ void Login::onDialogClosed()
     show();
 }
 
-//void Login::closeEvent(QCloseEvent *event)
-//{
-//    QDialog::closeEvent(event);
-//    emit closed();
-//}
-
-
 void Login::on_forgotPb_clicked()
 {
         ForgotPw forgot(username);
         forgot.setModal(true);
         forgot.exec();
 }
-
 
 void Login::on_checkBoxPassword_stateChanged(int arg1)
 {
@@ -158,10 +143,6 @@ void Login::on_checkBoxPassword_stateChanged(int arg1)
         ui->passwordLn->setEchoMode(QLineEdit::Password);
         }
 }
-
-
-
-
 
 void Login::on_signUpPb_clicked()
 {

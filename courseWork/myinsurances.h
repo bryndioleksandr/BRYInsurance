@@ -34,23 +34,14 @@ public:
 
 private slots:
     void addInsuranceType(QString tableName, QString typeName, QVBoxLayout* layout);
-
     void on_downloadPb_clicked(QString tableName, int insurancePolicy);
-
     void on_deletePb_clicked(QString tableName, int insurancePolicy);
-
     void on_fullAutoPb_clicked();
-
     void on_fullTravelPb_clicked();
-
     void on_fullGadgetPb_clicked();
-
     void on_closeAutoClicked();
-
     void on_closeTravelClicked();
-
     void on_closeGadgetClicked();
-
 signals:
     void closed();
 protected:
@@ -59,7 +50,6 @@ protected:
 private:
     Ui::MyInsurances *ui;
     int currentUserId;
-
     QString tableName, autoType, insuranceType, autoNumber, autoBrand, autoModel, cubicCapacity, carryingCapacity, motoCubic, city, numOfPassengers, trailer_for, startAuto;
     QString phoneNumberGadget, gadgetBrand, gadgetModel, insuranceTypeGadget, coverageType, startGadget;
     QString travelActivity, travelDirection, coverageAmountTravel, startTravel;
@@ -69,10 +59,6 @@ private:
     QPushButton* closeAutoPb, *closeTravelPb, *closeGadgetPb;
     QVBoxLayout *typeLayout;
     QGroupBox* typeGroupBox;
-
-
-
-
 };
 
 #endif // MYINSURANCES_H

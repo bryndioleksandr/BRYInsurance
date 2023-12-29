@@ -61,8 +61,6 @@ void Registr::on_confirmPb_clicked()
             user.setSurname(surname.toStdString());
             user.setName(name.toStdString());
             user.setPhoneNumber(phoneNum.toStdString());
-//            ManageInsurances manageInsurance;
-//            manageInsurance.setUser(user);
             try{
                 QString queryStr = QString("SELECT COUNT(*) FROM Users WHERE username = '%1'")
                                             .arg(username.toStdString().c_str());

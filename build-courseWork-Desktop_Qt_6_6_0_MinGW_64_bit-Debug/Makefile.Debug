@@ -6061,38 +6061,7 @@ win32/admintools.o: ../courseWork/admintools.cpp ../courseWork/admintools.h \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QCloseEvent \
-		ui_admintools.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QLabel \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlabel.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qpicture.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpacerItem
+		ui/ui_admintools.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\admintools.o ..\courseWork\admintools.cpp
 
 win32/allinsurances.o: ../courseWork/allinsurances.cpp ../courseWork/allinsurances.h \
@@ -6329,39 +6298,7 @@ win32/allinsurances.o: ../courseWork/allinsurances.cpp ../courseWork/allinsuranc
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QCloseEvent \
-		ui_allinsurances.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHeaderView \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qheaderview.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractitemview.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qitemselectionmodel.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QTabWidget \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QTableView \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qtableview.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QWidget
+		ui/ui_allinsurances.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\allinsurances.o ..\courseWork\allinsurances.cpp
 
 win32/autoinsurance.o: ../courseWork/autoinsurance.cpp ../courseWork/autoinsurance.h \
@@ -6662,30 +6599,7 @@ win32/confirmpurchasingauto.o: ../courseWork/confirmpurchasingauto.cpp ../course
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_confirmpurchasingauto.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_confirmpurchasingauto.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\confirmpurchasingauto.o ..\courseWork\confirmpurchasingauto.cpp
 
 win32/confirmpurchasinggadget.o: ../courseWork/confirmpurchasinggadget.cpp ../courseWork/confirmpurchasinggadget.h \
@@ -6982,30 +6896,7 @@ win32/confirmpurchasinggadget.o: ../courseWork/confirmpurchasinggadget.cpp ../co
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_confirmpurchasinggadget.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_confirmpurchasinggadget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\confirmpurchasinggadget.o ..\courseWork\confirmpurchasinggadget.cpp
 
 win32/confirmpurchasingtravel.o: ../courseWork/confirmpurchasingtravel.cpp ../courseWork/confirmpurchasingtravel.h \
@@ -7302,32 +7193,7 @@ win32/confirmpurchasingtravel.o: ../courseWork/confirmpurchasingtravel.cpp ../co
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_confirmpurchasingtravel.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QDateEdit \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_confirmpurchasingtravel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\confirmpurchasingtravel.o ..\courseWork\confirmpurchasingtravel.cpp
 
 win32/forgotpw.o: ../courseWork/forgotpw.cpp ../courseWork/forgotpw.h \
@@ -7505,52 +7371,7 @@ win32/forgotpw.o: ../courseWork/forgotpw.cpp ../courseWork/forgotpw.h \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		../../Qt/6.6.0/mingw_64/include/QtCore/QCryptographicHash \
 		../../Qt/6.6.0/mingw_64/include/QtCore/qcryptographichash.h \
-		ui_forgotpw.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/QVariant \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qlocale.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QFrame \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qframe.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QLabel \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlabel.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qpicture.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextdocument.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QLineEdit \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlineedit.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextcursor.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextformat.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qpen.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextoption.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpacerItem
+		ui/ui_forgotpw.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\forgotpw.o ..\courseWork\forgotpw.cpp
 
 win32/gadgetinsurance.o: ../courseWork/gadgetinsurance.cpp ../courseWork/gadgetinsurance.h \
@@ -7851,30 +7672,7 @@ win32/insurancecompany.o: ../courseWork/insurancecompany.cpp ../courseWork/insur
 		../../Qt/6.6.0/mingw_64/include/QtCore/QSortFilterProxyModel \
 		../../Qt/6.6.0/mingw_64/include/QtCore/qsortfilterproxymodel.h \
 		../../Qt/6.6.0/mingw_64/include/QtCore/qabstractproxymodel.h \
-		ui_insurancecompany.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QFrame
+		ui/ui_insurancecompany.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\insurancecompany.o ..\courseWork\insurancecompany.cpp
 
 win32/insuranceevents.o: ../courseWork/insuranceevents.cpp ../courseWork/insuranceevents.h \
@@ -8108,33 +7906,7 @@ win32/insuranceevents.o: ../courseWork/insuranceevents.cpp ../courseWork/insuran
 		../../Qt/6.6.0/mingw_64/include/QtGui/qtextformat.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/qpen.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/qtextoption.h \
-		ui_insuranceevents.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QLabel \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlabel.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qpicture.h \
+		ui/ui_insuranceevents.h \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h
@@ -8434,31 +8206,7 @@ win32/login.o: ../courseWork/login.cpp ../courseWork/login.h \
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_login.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QFrame \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_login.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\login.o ..\courseWork\login.cpp
 
 win32/main.o: ../courseWork/main.cpp ../courseWork/login.h \
@@ -9082,32 +8830,7 @@ win32/mainwindow.o: ../courseWork/mainwindow.cpp ../courseWork/mainwindow.h \
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_mainwindow.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h
+		ui/ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\mainwindow.o ..\courseWork\mainwindow.cpp
 
 win32/manageinsurances.o: ../courseWork/manageinsurances.cpp ../courseWork/manageinsurances.h \
@@ -9335,39 +9058,7 @@ win32/manageinsurances.o: ../courseWork/manageinsurances.cpp ../courseWork/manag
 		../../Qt/6.6.0/mingw_64/include/QtGui/QDesktopServices \
 		../../Qt/6.6.0/mingw_64/include/QtGui/qdesktopservices.h \
 		../../Qt/6.6.0/mingw_64/include/QtCore/QUrl \
-		ui_manageinsurances.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpacerItem \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout
+		ui/ui_manageinsurances.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\manageinsurances.o ..\courseWork\manageinsurances.cpp
 
 win32/myaccount.o: ../courseWork/myaccount.cpp ../courseWork/myaccount.h \
@@ -9664,33 +9355,7 @@ win32/myaccount.o: ../courseWork/myaccount.cpp ../courseWork/myaccount.h \
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_myaccount.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QFrame \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpinBox \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qspinbox.h
+		ui/ui_myaccount.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\myaccount.o ..\courseWork\myaccount.cpp
 
 win32/myinsurances.o: ../courseWork/myinsurances.cpp ../courseWork/myinsurances.h \
@@ -9936,33 +9601,7 @@ win32/myinsurances.o: ../courseWork/myinsurances.cpp ../courseWork/myinsurances.
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpacerItem \
-		ui_myinsurances.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QScrollArea \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qscrollarea.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QWidget
+		ui/ui_myinsurances.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\myinsurances.o ..\courseWork\myinsurances.cpp
 
 win32/mysqldbmanager.o: ../courseWork/mysqldbmanager.cpp ../courseWork/mysqldbmanager.h \
@@ -10409,30 +10048,7 @@ win32/purchaseautoinsurance.o: ../courseWork/purchaseautoinsurance.cpp ../course
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_purchaseautoinsurance.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_purchaseautoinsurance.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\purchaseautoinsurance.o ..\courseWork\purchaseautoinsurance.cpp
 
 win32/purchasegadgetinsurance.o: ../courseWork/purchasegadgetinsurance.cpp ../courseWork/purchasegadgetinsurance.h \
@@ -10729,30 +10345,7 @@ win32/purchasegadgetinsurance.o: ../courseWork/purchasegadgetinsurance.cpp ../co
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_purchasegadgetinsurance.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_purchasegadgetinsurance.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\purchasegadgetinsurance.o ..\courseWork\purchasegadgetinsurance.cpp
 
 win32/purchasetravelinsurance.o: ../courseWork/purchasetravelinsurance.cpp ../courseWork/purchasetravelinsurance.h \
@@ -11049,30 +10642,7 @@ win32/purchasetravelinsurance.o: ../courseWork/purchasetravelinsurance.cpp ../co
 		../courseWork/admintools.h \
 		../courseWork/allinsurances.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/QAction \
-		ui_purchasetravelinsurance.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_purchasetravelinsurance.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\purchasetravelinsurance.o ..\courseWork\purchasetravelinsurance.cpp
 
 win32/registr.o: ../courseWork/registr.cpp ../courseWork/registr.h \
@@ -11302,34 +10872,7 @@ win32/registr.o: ../courseWork/registr.cpp ../courseWork/registr.h \
 		../../Qt/6.6.0/mingw_64/include/QtSql/qsqlrelationaltablemodel.h \
 		../../Qt/6.6.0/mingw_64/include/QtSql/QSqlRelation \
 		../../Qt/6.6.0/mingw_64/include/QtCore/QByteArray \
-		ui_registr.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QFrame \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpacerItem \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		ui/ui_registr.h \
 		../courseWork/manageinsurances.h \
 		../courseWork/autoinsurance.h \
 		../courseWork/savereceiptpdf.h \
@@ -11528,51 +11071,7 @@ win32/resetpassword.o: ../courseWork/resetpassword.cpp ../courseWork/resetpasswo
 		../../Qt/6.6.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		../../Qt/6.6.0/mingw_64/include/QtCore/QCryptographicHash \
 		../../Qt/6.6.0/mingw_64/include/QtCore/qcryptographichash.h \
-		ui_resetpassword.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/QVariant \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qlocale.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QCheckBox \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qcheckbox.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QLineEdit \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qlineedit.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qframe.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextcursor.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextdocument.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextformat.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qpen.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qtextoption.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpacerItem
+		ui/ui_resetpassword.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\resetpassword.o ..\courseWork\resetpassword.cpp
 
 win32/savereceiptpdf.o: ../courseWork/savereceiptpdf.cpp ../courseWork/savereceiptpdf.h \
@@ -12088,30 +11587,7 @@ win32/shop.o: ../courseWork/shop.cpp ../courseWork/shop.h \
 		../courseWork/confirmpurchasingtravel.h \
 		../courseWork/purchasegadgetinsurance.h \
 		../courseWork/confirmpurchasinggadget.h \
-		ui_secondmainwindow.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QGridLayout
+		ui/ui_shop.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\shop.o ..\courseWork\shop.cpp
 
 win32/showevents.o: ../courseWork/showevents.cpp ../courseWork/showevents.h \
@@ -12345,39 +11821,7 @@ win32/showevents.o: ../courseWork/showevents.cpp ../courseWork/showevents.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/qtextformat.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/qpen.h \
 		../../Qt/6.6.0/mingw_64/include/QtGui/qtextoption.h \
-		ui_showevents.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QHeaderView \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qheaderview.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractitemview.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		../../Qt/6.6.0/mingw_64/include/QtCore/qitemselectionmodel.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QTabWidget \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QTableView \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/qtableview.h \
-		../../Qt/6.6.0/mingw_64/include/QtWidgets/QWidget
+		ui/ui_showevents.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o win32\showevents.o ..\courseWork\showevents.cpp
 
 win32/travelinsurance.o: ../courseWork/travelinsurance.cpp ../courseWork/travelinsurance.h \

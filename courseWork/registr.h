@@ -29,9 +29,7 @@ public:
 
 private slots:
     void on_confirmPb_clicked();
-
     void on_showPasswordCb_stateChanged(int arg1);
-
 signals:
     void closed();
 protected:

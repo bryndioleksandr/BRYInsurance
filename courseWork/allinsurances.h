@@ -28,13 +28,9 @@ public:
 
 private slots:
     void on_tabWidget_currentChanged(int index);
-
     void on_currentIndexCbChanged(int index, QString sortType);
-
     void on_findActiveLn_textChanged(const QString &arg1);
-
     void on_findOneLn_textChanched(const QString &arg1, QString byField);
-
 signals:
     void closed();
 protected:
